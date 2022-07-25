@@ -3,12 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
 /* font-family: 'Cormorant SC', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+/*     font-family: 'Orbitron', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/* font-family: 'VT323', monospace; */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
+}
+
+body{
+    overflow-x: hidden
 }
 
 .navbar {
@@ -26,6 +33,11 @@
 
 .navbar-dark .navbar-brand {
     color: rgb(255, 255, 255);
+}
+
+.nav-link{
+    font-size: 20px;
+    
 }
 
 .jumbotron {
@@ -114,7 +126,7 @@
 
 .item.item1 p {
     text-align: center;
-    margin-top: 70px;
+    padding-top: 70px;
     font-family: 'Orbitron', sans-serif;
     font-size: 20px;
 }
@@ -124,10 +136,42 @@
     transition: 1.5s;
 }
 
+@media only screen and (max-width: 400px){
+    .item.item1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .item.item1 img {
+        width: 300px;
+    padding: 5px;
+    padding-left: 60px;
+        border-radius: 0px;
+        filter: grayscale(100);
+    }
+    
+    .item.item1 img:hover {
+        transform: scale(1.05);
+        transition: all 1s;
+        filter: grayscale(100);
+    }
+    
+    .item.item1 p {
+        text-align: center;
+        padding-top: 70px;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 15px;
+    }
+    
+    .item.item1 p:hover {
+        color: rgb(9, 168, 189);
+        transition: 1.5s;
+}}
+
 .item.item2 h3 {
     font-family: 'Orbitron', sans-serif;
     padding: 20px;
-    font-size: 40px;
+    font-size: 15px;
 }
 
 .item.item2 h3:hover {
@@ -145,4 +189,44 @@
     text-align: center;
     padding: 50px;
     font-size: 100px;
+}
+
+.galery{
+    background-color: black;
+    height: 400px;
+}
+
+.galeryTitle{
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 8px;
+    
+
+}
+
+.galeryTitle:hover{
+    color:  rgb(9, 168, 189);
+    text-shadow: 0 0 5px white;
+    transition: 1.5s;
+}
+
+.galery p{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+}
+
+.galery iframe{
+    padding-left: 100px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 500px;
+
+}
+
+.text-introduction{
+    font-family: 'VT323', monospace;
 }
