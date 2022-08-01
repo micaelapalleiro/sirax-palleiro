@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap");
+/* font-family: 'Cormorant SC', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap");
+/* font-family: 'Cormorant SC', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+/*     font-family: 'Orbitron', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+/* font-family: 'VT323', monospace; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-image: url(./assets/multimedia/particles-7104407_1920.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.navbar .navbar-brand {
+  font-family: "Orbitron", sans-serif;
+  font-size: 40px;
+}
+.navbar .navbar-dark .navbar-brand {
+  color: rgb(255, 255, 255);
+}
+.navbar .nav-link {
+  font-size: 20px;
+}
+
+.jumbotron {
+  background-image: url(./assets/multimedia/black-2121741_1280.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px;
+  margin-bottom: 0;
+}
+.jumbotron h1 {
+  color: rgb(9, 168, 189);
+  font-family: "Orbitron", sans-serif;
+  text-align: right;
+  font-size: 50px;
+  padding: 50px;
+}
+.jumbotron h1 h1:hover {
+  transform: translateX(-60px);
+  transition: 1s;
+}
+
+.welcome h1 {
+  background-color: rgb(9, 168, 189);
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.welcome-foot {
+  background-color: black;
+  min-height: 200px;
+}
+.welcome-foot h2 {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 25px;
+  color: #333;
+}
+
+.redes {
+  text-align: center;
+}
+.redes a {
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 5px;
+  font-size: 30px;
+  color: #333;
+}
+.redes a i:hover {
+  color: rgb(9, 168, 189);
+  transition: 1s;
+}
+
+.item {
+  background-color: black;
+  height: 200px;
+}
+.item .item1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.item .item1 img {
+  width: 400px;
+  padding: 30px;
+  border-radius: 100px;
+}
+.item .item1 img img:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  filter: grayscale(100);
+}
+
+.item.item1 .item.item1 p {
+  text-align: center;
+  padding-top: 70px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+}
+
+.item.item1 p:hover {
+  color: rgb(9, 168, 189);
+  transition: 1.5s;
+}
+
+@media only screen and (max-width: 400px) {
+  .item.item1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .item.item1 img {
+    width: 300px;
+    padding: 5px;
+    padding-left: 60px;
+    border-radius: 0px;
+    filter: grayscale(100);
+  }
+  .item.item1 img:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+    filter: grayscale(100);
+  }
+  .item.item1 p {
+    text-align: center;
+    padding-top: 70px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+  }
+  .item.item1 p:hover {
+    color: rgb(9, 168, 189);
+    transition: 1.5s;
+  }
+}
+.item.item2 h3 {
+  font-family: "Orbitron", sans-serif;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.item.item2 h3:hover {
+  text-shadow: 0 0 5px rgb(9, 168, 189);
+  transition: 1s;
+}
+
+.item.item2 p {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+
+.item.item3 {
+  text-align: center;
+  padding: 50px;
+  font-size: 100px;
+}
+
+.galery {
+  background-color: black;
+  height: 400px;
+}
+
+.galeryTitle {
+  font-family: "VT323", monospace;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 8px;
+}
+
+.galeryTitle:hover {
+  color: rgb(9, 168, 189);
+  text-shadow: 0 0 5px white;
+  transition: 1.5s;
+}
+
+.galery p {
+  font-family: "Orbitron", sans-serif;
+  font-size: 25px;
+}
+
+.galery iframe {
+  padding-left: 100px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+}
+
+.text-introduction {
+  font-family: "VT323", monospace;
+}/*# sourceMappingURL=estilos.css.map */
